@@ -1,6 +1,6 @@
 # Учебное приложение в рамках стажировки в Itransition(серверная часть)
 
-Бэкенд был развернут на платформе Cyclic
+Бэкенд был развернут на платформе Railway
 
 <img src="https://media.giphy.com/media/KuPN1r29NVgPMaTLGh/giphy.gif" width="400" height="400">
 

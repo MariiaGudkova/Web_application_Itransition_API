@@ -7,7 +7,7 @@ const SERVER_ERROR_CODE = 500;
 
 const allowedCors = [
   "https://mariiagudkova.github.io/Web_application_Itransition/",
-  "*",
+  // "*",
 ];
 
 const DEFAULT_ALLOWED_METHODS = "GET,HEAD,PUT,PATCH,POST,DELETE";

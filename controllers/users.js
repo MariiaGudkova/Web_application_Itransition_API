@@ -56,8 +56,6 @@ const login = (req, res) => {
           .status(UNAUTHORIZATION_ERROR_CODE)
           .send({ message: "The user was blocked. Access denied" });
       }
-      // TODO remove
-      console.log(password);
       bcrypt
         .compare(password, user.password)
         .then((matched) => {
@@ -71,9 +69,7 @@ const login = (req, res) => {
           );
           res.send({ token });
         })
-        .catch((e) => {
-          // TODO remove
-          console.log(e);
+        .catch(() => {
           return res
             .status(UNAUTHORIZATION_ERROR_CODE)
             .send({ message: "Incorrect email or password" });
