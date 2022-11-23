@@ -6,8 +6,6 @@ const CONFLICT_ERROR_CODE = 409;
 const SERVER_ERROR_CODE = 500;
 
 const allowedCors = [
-  "http://localhost:3000",
-  "https://localhost:3000",
   "https://mariiagudkova.github.io/Web_application_Itransition/",
 ];
 
