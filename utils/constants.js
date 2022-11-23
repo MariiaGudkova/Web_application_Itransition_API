@@ -5,7 +5,7 @@ const NOTFOUND_ERROR_CODE = 404;
 const CONFLICT_ERROR_CODE = 409;
 const SERVER_ERROR_CODE = 500;
 
-const allowedCors = ["https://mariiagudkova.github.io/"];
+const allowedCors = ["https://mariiagudkova.github.io"];
 
 const DEFAULT_ALLOWED_METHODS = "GET,HEAD,PUT,PATCH,POST,DELETE";
 
