@@ -7,8 +7,11 @@ const routes = require("./routes/index");
 const { handleCors } = require("./middlewares/handleCors");
 require("dotenv").config();
 
-const { PORT = 5000, MONGO_URL = "mongodb://localhost:27017/usersbd" } =
-  process.env;
+const {
+  PORT = 5000,
+
+  MONGO_URL = "mongodb://mongo:Sgxufa5ZTAasyb0btF0E@containers-us-west-125.railway.app:5651",
+} = process.env;
 const app = express();
 const apiLimiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutes
@@ -24,4 +27,6 @@ app.use(apiLimiter);
 app.use(handleCors);
 app.use(routes);
 app.use(errors());
-app.listen(PORT);
+app.listen(PORT, () => {
+  console.log("app started");
+});
